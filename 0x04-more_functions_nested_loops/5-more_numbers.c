@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if an int is a char digit
- * @c: is the into to check if char digit
- * Return: 0 if not digit and 1 if digit
+ * more_numbers - print 0 to 14 ten times on different lines
+ * Return: 0 Always
  */
 
-void more_nubmers(void)
+void more_numbers(void)
 {
 	char numbers[] = "01234567891011121314\n";
-	int i = 0;
+	int i;
 
 	for(int j = 0; j < 10; j++)
 	{
+		i = 0;
 		while(numbers[i] != '\0')
 		{
 			_putchar(numbers[i]);
