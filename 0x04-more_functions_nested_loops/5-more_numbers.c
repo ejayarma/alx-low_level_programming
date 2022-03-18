@@ -1,22 +1,24 @@
 #include "main.h"
-
 /**
- * more_numbers - print 0 to 14 ten times on different lines
- * Return: 0 Always
+ * more_numbers - print 0 to 15 10 times on different lines.
+ * Return: void.
  */
-
 void more_numbers(void)
 {
-	char numbers[] = "01234567891011121314\n";
-	int i;
+	int i, j, n;
 
-	for(int j = 0; j < 10; j++)
+	for (i = 0; i < 10; ++i)
 	{
-		i = 0;
-		while(numbers[i] != '\0')
+		for (j = 0, n = 0; j < 15; ++j, ++n)
 		{
-			_putchar(numbers[i]);
-			i++;
+			if (j > 9)
+			{
+				_putchar('1');
+				n = j % 10;
+			}
+			_putchar(n + '0');
 		}
+		_putchar('\n');
 	}
+
 }
