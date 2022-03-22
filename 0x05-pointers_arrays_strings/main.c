@@ -4,6 +4,7 @@
 #include "main.h"
 #include "0-reset_to_98.c"
 #include "1-swap.c"
+#include "2-strlen.c"
 
 void test_task_0(void)
 {
@@ -28,11 +29,21 @@ void test_task_1(void)
 	printf("m, n before reset_to_98: %d, %d\n", m, n);
 }
 
+void test_task_2(void)
+{
+	char *p;
+	int l;
+	char str[] = "Hello World";
+	p = str;
+	l = _strlen(str);
+	printf("The length of string '%s' is: %d", str, l);
+}
+
 /*
  * main - Entry point of program
  * Description: For testing other programs in this project
  */
 int main(void)
 {
-	test_task_1();
+	test_task_2();
 }
