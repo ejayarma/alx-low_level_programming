@@ -52,6 +52,8 @@
 		"typeinfo": "c",
 		"cinttypes": "c",
 		"stdbool.h": "c",
-		"unistd.h": "c"
+		"unistd.h": "c",
+		"_mingw_print_push.h": "c",
+		"main.h": "c"
 	}
 }
