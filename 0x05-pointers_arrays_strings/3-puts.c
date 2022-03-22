@@ -5,7 +5,6 @@
 /**
  * _puts - a function  that returns the length of a string.
  * @str: pointer to string
- * Return: Always 0
  */
 void _puts(char *str)
 {
@@ -21,5 +20,4 @@ void _puts(char *str)
 		c = *(str + i);
 	}
 	_putchar('\n');
-	return (0);
 }
