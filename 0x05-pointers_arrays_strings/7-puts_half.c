@@ -17,7 +17,7 @@ void puts_half(char *str)
 	}
 	mid = j / 2;
 	n = (j - 1) / 2;
-	if (mid % 2 == 1)
+	if (j % 2 == 1)
 	{
 		for (i = n + 1; i < j; i += 1)
 		{
@@ -31,6 +31,5 @@ void puts_half(char *str)
 			_putchar(str[i]);
 		}
 	}
-
 	_putchar('\n');
 }
