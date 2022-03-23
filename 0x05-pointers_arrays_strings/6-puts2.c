@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -11,10 +9,12 @@
 void puts2(char *str)
 {
 	int i = 0, j;
+
 	while (str[i] != '\0')
 	{
 		i += 1;
 	}
+
 	for (j = 0; j < i; j += 2)
 	{
 		_putchar(j);
