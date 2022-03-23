@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_string - a function that  prints even-indexed character of a string,
+ * puts2 - a function that  prints even-indexed character of a string,
  * starting with the first character, followed by a new line.
  * @str: pointer to string
  * Return: void
