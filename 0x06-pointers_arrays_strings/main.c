@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "0-strcat.c"
+#include "1-strncat.c"
 
 int test_task_0(void)
 {
@@ -19,7 +20,21 @@ int test_task_0(void)
 
 int test_task_1(void)
 {
-    ;
+    char s1[98] = "Hello ";
+    char s2[] = "World!\n";
+    char *ptr;
+
+    printf("%s\n", s1);
+    printf("%s", s2);
+    ptr = _strncat(s1, s2, 1);
+    printf("%s\n", s1);
+    printf("%s", s2);
+    printf("%s\n", ptr);
+    ptr = _strncat(s1, s2, 1024);
+    printf("%s", s1);
+    printf("%s", s2);
+    printf("%s", ptr);
+    return (0);
 }
 
 int test_task_2(void)
@@ -63,5 +78,5 @@ int test_task_8(void)
  */
 int main(void)
 {
-    test_task_0();
+    test_task_1();
 }
