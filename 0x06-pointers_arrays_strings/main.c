@@ -3,6 +3,7 @@
 #include "0-strcat.c"
 #include "1-strncat.c"
 #include "2-strncpy.c"
+#include "3-strcmp.c"
 
 int test_task_0(void)
 {
@@ -74,7 +75,13 @@ int test_task_2(void)
 
 int test_task_3(void)
 {
-    ;
+    char s1[] = "Hello";
+    char s2[] = "World!";
+
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
 }
 
 int test_task_4(void)
@@ -108,5 +115,5 @@ int test_task_8(void)
  */
 int main(void)
 {
-    test_task_2();
+    test_task_3();
 }
