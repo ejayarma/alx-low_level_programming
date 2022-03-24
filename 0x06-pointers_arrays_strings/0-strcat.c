@@ -11,6 +11,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	if ((dest == NULL) && (src == NULL))
+		return NULL;
+
 	char *str = dest;
 
 	while (*str != '\0')
