@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -11,9 +10,6 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	if ((dest == NULL) && (src == NULL))
-		return NULL;
-
 	char *str = dest;
 
 	while (*str != '\0')
