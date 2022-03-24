@@ -5,8 +5,8 @@
 
 /**
  * _strncpy - a function  that copies a string.
- * @dest: string 1
- * @src: string 2
+ * @s1: string 1
+ * @s2: string 2
  * and apended to dest
  * Return: Returns char *
  */
