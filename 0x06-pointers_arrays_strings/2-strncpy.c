@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _strncat - a function  that copies a string.
+ * _strncpy - a function  that copies a string.
  * @dest: destination string
  * @src: second string to append to dest
  * @n: n bytes to be copied from from src
