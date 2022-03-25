@@ -6,6 +6,8 @@
 #include "3-strcmp.c"
 #include "4-rev_array.c"
 #include "5-string_toupper.c"
+#include "6-cap_string.c"
+#include "7-leet.c"
 
 int test_task_0(void)
 {
@@ -126,17 +128,24 @@ int test_task_5(void)
 
 int test_task_6(void)
 {
-    ;
+    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char *ptr;
+
+    ptr = cap_string(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
 
 int test_task_7(void)
 {
-    ;
-}
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-int test_task_8(void)
-{
-    ;
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
+    return (0);
 }
 
 /*
@@ -145,5 +154,5 @@ int test_task_8(void)
  */
 int main(void)
 {
-    test_task_5();
+    test_task_7();
 }
