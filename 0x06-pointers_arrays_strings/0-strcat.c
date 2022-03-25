@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strlen - a function  that concatenates two strings.
+ * _strcat - a function  that concatenates two strings.
  * @dest: destination string
  * @src: second string to append to dest
  * Return: Returns char *

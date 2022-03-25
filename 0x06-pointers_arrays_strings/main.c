@@ -4,6 +4,7 @@
 #include "1-strncat.c"
 #include "2-strncpy.c"
 #include "3-strcmp.c"
+#include "4-rev_array.c"
 
 int test_task_0(void)
 {
@@ -84,9 +85,31 @@ int test_task_3(void)
     return (0);
 }
 
+void print_array(int *a, int n)
+{
+    int i;
+
+    i = 0;
+    while (i < n)
+    {
+        if (i != 0)
+        {
+            printf(", ");
+        }
+        printf("%d", a[i]);
+        i++;
+    }
+    printf("\n");
+}
+
 int test_task_4(void)
 {
-    ;
+    int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+
+    print_array(a, sizeof(a) / sizeof(int));
+    reverse_array(a, sizeof(a) / sizeof(int));
+    print_array(a, sizeof(a) / sizeof(int));
+    return (0);
 }
 
 int test_task_5(void)
@@ -115,5 +138,5 @@ int test_task_8(void)
  */
 int main(void)
 {
-    test_task_3();
+    test_task_4();
 }

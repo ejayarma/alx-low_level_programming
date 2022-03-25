@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _strncpy - a function  that copies a string.
+ * _strcmp - a function  that copies a string.
  * @s1: string 1
  * @s2: string 2
  * and apended to dest
