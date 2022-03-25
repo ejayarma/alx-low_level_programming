@@ -115,7 +115,13 @@ int test_task_4(void)
 
 int test_task_5(void)
 {
-    ;
+    char str[] = "Look up!\n";
+    char *ptr;
+
+    ptr = string_toupper(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
 
 int test_task_6(void)
@@ -139,5 +145,5 @@ int test_task_8(void)
  */
 int main(void)
 {
-    test_task_4();
+    test_task_5();
 }

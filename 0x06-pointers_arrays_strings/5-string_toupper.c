@@ -4,10 +4,8 @@
 #include "main.h"
 
 /**
- * reverse_array - a function  that copies a string.
- * @a: pointer to the array
- * @n: is the number of elements of the array
- * and apended to dest
+ * string_toupper - a function  that copies a string.
+ * @s: pointer to the string
  * Return: void
  */
 char *string_toupper(char *s)

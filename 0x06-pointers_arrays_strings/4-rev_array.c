@@ -4,26 +4,22 @@
 #include "main.h"
 
 /**
- * reverse_array - a function  that copies a string.
- * @a: pointer to the array
- * @n: is the number of elements of the array
+ * _strncpy - a function  that copies a string.
+ * @dest: destination string
+ * @src: second string to append to dest
+ * @n: n bytes to be copied from from src
  * and apended to dest
- * Return: void
+ * Return: Returns char *
  */
-void reverse_array(int *a, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, arrlen;
-	int arr[1024];
+	int i;
 
-	for (i = 0; i < n; i++)
-	{
-		arr[i] = a[i];
-	}
-	i -= 1;
-	for (j = 0; j < n;)
-	{
-		a[i] = arr[j];
-		j++;
-		i--;
-	}
+	int dest_len = strlen(dest);
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for (; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
