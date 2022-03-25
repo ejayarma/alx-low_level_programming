@@ -5,6 +5,7 @@
 #include "2-strncpy.c"
 #include "3-strcmp.c"
 #include "4-rev_array.c"
+#include "5-string_toupper.c"
 
 int test_task_0(void)
 {
