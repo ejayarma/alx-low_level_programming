@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int q, coin, change, i = 0, times = 0;
 
-	int coins[] = {25, 10, 5, 2, 1};
+	int coins[5] = {25, 10, 5, 2, 1};
 	if (argc - 1 != 1)
 	{
 		puts("Error");
@@ -29,5 +29,8 @@ int main(int argc, char *argv[])
 		change -= q * coin;
 		coin = coins[++i];
 	}
-	printf("%d\n", times);
+	if (change < 0)
+		printf("%d\n", times);
+	else
+		printf("%d", times);
 }
