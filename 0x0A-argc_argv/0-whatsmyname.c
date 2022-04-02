@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
- * @brief Displays the name of the program
  * main - program entry
  * @argc: argument count
  * @argv: argument vector
