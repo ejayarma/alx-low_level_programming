@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
 
 /**
@@ -13,8 +12,8 @@
 int main(int argc, char *argv[])
 {
 	int q, coin, change, i = 0, times = 0;
-
 	int coins[5] = {25, 10, 5, 2, 1};
+
 	if (argc - 1 != 1)
 	{
 		puts("Error");
