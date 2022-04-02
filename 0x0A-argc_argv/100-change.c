@@ -21,11 +21,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	change = atoi(argv[1]);
-	if (change == 0)
-	{
-		puts("0");
-		return (1);
-	}
 	coin = coins[i];
 	while (change > 0 && i < 5)
 	{
