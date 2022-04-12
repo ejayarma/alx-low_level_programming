@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-  printf("%s\n", __FILE__);
+  printf("Hello world");
   return (0);
 }
