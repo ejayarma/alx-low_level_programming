@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "_putchar.c"
 #include "main.h"
 
 /**
@@ -9,6 +10,6 @@
  */
 int main(void)
 {
-  printf("%s\n", __FILE__);
+  printf("Hello world");
   return (0);
 }
