@@ -11,9 +11,30 @@
 int main(void)
 {
 	int i;
-	char path[] = __BASE_FILE__;
 
+	char path[] = __FILE__;
 	i = 0;
+
+	while (path[i])
+	{
+		i++;
+	}
+
+	while (path[i] != '/')
+	{
+		if (i == 0)
+		{
+			break;
+		}
+
+		i--;
+	}
+
+	if (i != 0)
+	{
+		i++;
+	}
+
 	while (path[i])
 	{
 		_putchar(path[i]);
