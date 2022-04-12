@@ -11,7 +11,7 @@
 int main(void)
 {
 	int i;
-	char path[] = __FILE__;
+	char path[] = __BASE_FILE__;
 
 	i = 0;
 	while (path[i])
