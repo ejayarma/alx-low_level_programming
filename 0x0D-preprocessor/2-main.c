@@ -1,5 +1,7 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
-#include "_putchar.c"
+// #include "_putchar.c"
 
 /**
  * main -  prints the name of the
@@ -12,7 +14,7 @@ int main(void)
 {
 	int i;
 
-	char path[] = __FILE__;
+	char path[] = __BASE_FILE__;
 	i = 0;
 
 	while (path[i])
