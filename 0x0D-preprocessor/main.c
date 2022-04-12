@@ -10,6 +10,6 @@
  */
 int main(void)
 {
-  printf("Hello world");
-  return (0);
+	printf("%d", SUM(-3, +80));
+	return (0);
 }
