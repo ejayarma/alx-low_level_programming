@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-// #include "_putchar.c"
 
 /**
  * main -  prints the name of the
