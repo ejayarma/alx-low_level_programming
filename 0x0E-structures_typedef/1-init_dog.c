@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * struct init_dog - Short description
+ * init_dog - Short description
  * @d: The dog structure
  * @owner: Owner of dog
  * @name: Name of dog
