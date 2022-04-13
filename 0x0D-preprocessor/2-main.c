@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 // #include "_putchar.c"
 
@@ -14,7 +13,7 @@ int main(void)
 {
 	int i;
 
-	char path[] = __BASE_FILE__;
+	char path[1024] = __FILE__;
 	i = 0;
 
 	while (path[i])
