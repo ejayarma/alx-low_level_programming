@@ -11,10 +11,9 @@
 int main(void)
 {
 	int i;
-
 	char path[1024] = __FILE__;
-	i = 0;
 
+	i = 0;
 	while (path[i])
 	{
 		i++;
