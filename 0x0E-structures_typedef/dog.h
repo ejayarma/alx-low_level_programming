@@ -4,7 +4,7 @@
 /**
  * struct dog - Short description
  * @owner: Owner of dog
- * @owner: Name of dog
+ * @name: Name of dog
  * @age: Dog's age
  *
  * Description: A simple definition of dog
