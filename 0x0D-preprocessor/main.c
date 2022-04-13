@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "_putchar.c"
-#include "main.h"
+#include "4-sum.h"
+#include "4-sum.h"
 
 /**
  * main - check the code
@@ -10,6 +9,9 @@
  */
 int main(void)
 {
-	printf("%d", SUM(-3, +80));
+	int s;
+
+	s = SUM(98, 1024);
+	printf("%d\n", s);
 	return (0);
 }
