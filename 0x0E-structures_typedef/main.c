@@ -3,6 +3,7 @@
 #include "2-print_dog.c"
 #include "1-init_dog.c"
 #include "4-new_dog.c"
+#include "5-free_dog.c"
 
 /**
  * main - check the code
@@ -14,6 +15,8 @@ int main(void)
 	dog_t *my_dog;
 
 	my_dog = new_dog("Poppy", 3.5, "Bob");
+	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+	free_dog(my_dog);
 	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
 	return (0);
 }

@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 
 /**
- * init_dog - Short description
+ * free_dog - Create a new dog
  * @d: The dog structure
  * @owner: Owner of dog
  * @name: Name of dog
@@ -10,12 +12,7 @@
  * Description: Longer description
  * Return: Always 0
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		d->name = name;
-		d->owner = owner;
-		d->age = age;
-	}
+	free(d);
 }
