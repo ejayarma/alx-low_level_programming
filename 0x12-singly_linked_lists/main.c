@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #include "lists.h"
-#include "test_list.h"
-#include "0-print_list.c"
 
 /**
  * main - check the code
@@ -15,7 +13,7 @@ int main(void)
 	list_t *head;
 	list_t *new;
 	list_t hello = {"World", 5, NULL};
-	size_t n;
+	long unsigned int n;
 
 	head = &hello;
 	new = malloc(sizeof(list_t));
