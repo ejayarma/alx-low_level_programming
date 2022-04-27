@@ -3,18 +3,17 @@
 #include "lists.h"
 
 /**
- * print_listint - A function that prints all 
- * the nodes of a listint_t list
+ * listint_len - A function that prints the
+ * number of nodes in a listint_t list
  * @h: head node of list
  * Return: number of nodes
 */
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t nodes = 0;
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
 		nodes += 1;
 		h = h->next;
 	}
