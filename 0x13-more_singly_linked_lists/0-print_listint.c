@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * print_listint - A function that prints all 
+ * print_listint - A function that prints all
  * the nodes of a listint_t list
  * @h: head node of list
  * Return: number of nodes
