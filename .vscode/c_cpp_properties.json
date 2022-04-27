@@ -4,10 +4,10 @@
 			"name": "Win32",
 			"includePath": ["${workspaceFolder}/**", "/usr/include/mysql"],
 			"defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-			"compilerPath": "C:/Program Files/CodeBlocks/MinGW/bin/gcc",
+			"compilerPath": "/usr/bin/gcc",
 			"cppStandard": "c++17",
 			"intelliSenseMode": "${default}",
-			"cStandard": "c11"
+			"cStandard": "c89"
 		}
 	],
 	"version": 4
