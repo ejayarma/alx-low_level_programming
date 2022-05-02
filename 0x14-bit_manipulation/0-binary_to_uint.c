@@ -9,9 +9,10 @@
  *
  * Return: int or 0 if error occured
  */
-unsigned int bbinary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum, slen, i;
+
 	slen = strlen(b);
 	sum = 0;
 
@@ -21,16 +22,16 @@ unsigned int bbinary_to_uint(const char *b)
 	{
 		if (b[i] == 48)
 		{
-			slen =- 1;
+			slen -= 1;
 			continue;
 		}
 		else if (b[i] != 49)
 		{
 			sum += pow(2, slen);
-			slen =- 1;
+			slen -= 1;
 		}
 		else
 			return (0);
 	}
-	return sum;
+	return (sum);
 }
