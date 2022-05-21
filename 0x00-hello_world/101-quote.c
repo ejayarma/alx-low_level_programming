@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 #include <string.h>
 
@@ -9,7 +8,8 @@
 int main(void)
 {
 	size_t len;
-	char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n\0";
+	char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
 	len = strlen(quote);
 
 	write(STDIN_FILENO, quote, len);
