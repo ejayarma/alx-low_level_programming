@@ -1,5 +1,35 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+unsigned int binary_to_uint(const char *b)
+{
+	unsigned int sum, slen, i;
+
+	slen = strlen(b);
+	sum = 0;
+
+	if (b == NULL)
+		return (0);
+	for (i = 0; i < slen; i++)
+	{
+		if (b[i] == 48)
+		{
+			slen -= 1;
+			continue;
+		}
+		else if (b[i] != 49)
+		{
+			sum += pow(2, slen);
+			slen -= 1;
+		}
+		else
+			return (0);
+	}
+	return (sum);
+}
+
 
 /**
  * main - check the code
