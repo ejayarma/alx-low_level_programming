@@ -12,7 +12,7 @@ int main(void)
 
 	len = strlen(quote);
 
-	write(STDIN_FILENO, quote, len);
+	write(STDERR_FILENO, quote, len);
 
 	return (0);
 }
