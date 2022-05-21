@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
 
@@ -14,5 +15,5 @@ int main(void)
 
 	write(STDERR_FILENO, quote, len);
 
-	return (0);
+	return (EXIT_FAILURE);
 }
