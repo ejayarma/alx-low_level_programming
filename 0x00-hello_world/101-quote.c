@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
 /**
  * main - main entry of program
@@ -6,15 +8,11 @@
  */
 int main(void)
 {
-	char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\0";
-	int i = 0;
+	size_t len;
+	char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n\0";
+	len = strlen(quote);
 
-	while (quote[i])
-	{
-		putchar(quote[i]);
-		i += 1;
-	}
-	putchar('\n');
+	write(STDIN_FILENO, quote, len);
 
 	return (0);
 }
