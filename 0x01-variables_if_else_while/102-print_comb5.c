@@ -19,7 +19,7 @@ for (i = 48; i < 58; i++)
 			{
 				a = (i - 48) * 10 + (j - 48);
 				b = (k - 48) * 10 + (l - 48);
-				if ((j < k || i < l) && (a < b))
+				if (1 && (a < b))
 				{
 					putchar(i);
 					putchar(j);
