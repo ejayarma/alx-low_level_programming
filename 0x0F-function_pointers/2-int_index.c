@@ -17,15 +17,15 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		return (matched);
 	}
-
-	for (i = 0; i < size; i++)
-	{
-		value = cmp(array[i]);
-		if (value)
+	if (array != NULL && size && cmp != NULL)
+		for (i = 0; i < size; i++)
 		{
-			matched = i;
-			break;
+			value = cmp(array[i]);
+			if (value)
+			{
+				matched = i;
+				break;
+			}
 		}
-	}
 	return (matched);
 }
