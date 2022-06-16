@@ -29,12 +29,12 @@ int main(int argc, char const *argv[])
 		if (f == NULL)
 		{
 			puts("Error");
-			exit(98);
+			exit(99);
 		}
 		else if ((f == op_div || f == op_mod) && y == 0)
 		{
 			puts("Error");
-			exit(98);
+			exit(100);
 		}
 
 		result = f(x, y);
