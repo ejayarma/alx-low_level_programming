@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * new_dog - short description
+ * _putchar - short description
  * @c: the character
  *
  * Description: Longer description
